@@ -121,5 +121,11 @@ namespace 数据采集整理小工具
             //            skrtbLog.ShowLog(PythonUtils.show_data_figure(StrNo));
             skrtbLog.ShowLog("分析已完成");
         }
+
+        private void skbtnShutDown_Click(object sender, EventArgs e)
+        {
+            AdbUtils.shutdown();
+            skrtbLog.ShowLog("手机已关机");
+        }
     }
 }

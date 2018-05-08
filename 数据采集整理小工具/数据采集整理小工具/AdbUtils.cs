@@ -79,5 +79,10 @@ namespace 数据采集整理小工具
         {
             return execute(@"/c adb reboot");
         }
+
+        public static string shutdown()
+        {
+            return execute(@"/c adb reboot -p");
+        }
     }
 }

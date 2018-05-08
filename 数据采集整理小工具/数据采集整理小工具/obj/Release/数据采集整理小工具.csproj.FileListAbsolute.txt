@@ -10,3 +10,15 @@ E:\Programmes\CSharp\数据采集整理小工具\数据采集整理小工具\bin
 E:\Programmes\CSharp\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.exe
 E:\Programmes\CSharp\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.pdb
 E:\Programmes\CSharp\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.Form2.resources
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\bin\Release\数据采集整理小工具.exe.config
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\bin\Release\数据采集整理小工具.exe
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\bin\Release\数据采集整理小工具.pdb
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\bin\Release\CSkin.xml
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.csprojResolveAssemblyReference.cache
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.Form1.resources
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.Form2.resources
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.Properties.Resources.resources
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.csproj.GenerateResource.Cache
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.csproj.CoreCompileInputs.cache
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.exe
+E:\Programmes\GitHub\CSharp\Adb_Tools_for_MI_project\数据采集整理小工具\数据采集整理小工具\obj\Release\数据采集整理小工具.pdb

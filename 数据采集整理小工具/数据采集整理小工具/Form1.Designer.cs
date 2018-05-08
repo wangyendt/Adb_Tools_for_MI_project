@@ -56,6 +56,7 @@ namespace 数据采集整理小工具
             this.skinGroupBox1 = new CCWin.SkinControl.SkinGroupBox();
             this.skpbScreenShot = new CCWin.SkinControl.SkinPictureBox();
             this.skinTabPage2 = new CCWin.SkinControl.SkinTabPage();
+            this.skbtnShutDown = new CCWin.SkinControl.SkinButton();
             this.skinTabControl1.SuspendLayout();
             this.skinTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.skinSplitContainer1)).BeginInit();
@@ -132,6 +133,7 @@ namespace 数据采集整理小工具
             this.skinGroupBox2.BackColor = System.Drawing.Color.Transparent;
             this.skinGroupBox2.BorderColor = System.Drawing.Color.Red;
             this.skinGroupBox2.Controls.Add(this.skStartCapture);
+            this.skinGroupBox2.Controls.Add(this.skbtnShutDown);
             this.skinGroupBox2.Controls.Add(this.skbtnReboot);
             this.skinGroupBox2.Controls.Add(this.skbtnAnalyse);
             this.skinGroupBox2.Controls.Add(this.skbtnClearData);
@@ -161,11 +163,11 @@ namespace 数据采集整理小工具
             this.skStartCapture.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skStartCapture.DownBack = null;
             this.skStartCapture.ForeColor = System.Drawing.Color.DarkRed;
-            this.skStartCapture.Location = new System.Drawing.Point(3, 549);
+            this.skStartCapture.Location = new System.Drawing.Point(3, 615);
             this.skStartCapture.MouseBack = null;
             this.skStartCapture.Name = "skStartCapture";
             this.skStartCapture.NormlBack = null;
-            this.skStartCapture.Size = new System.Drawing.Size(260, 148);
+            this.skStartCapture.Size = new System.Drawing.Size(260, 82);
             this.skStartCapture.TabIndex = 4;
             this.skStartCapture.Text = "启动/停止系统截图";
             this.skStartCapture.UseVisualStyleBackColor = false;
@@ -184,7 +186,7 @@ namespace 数据采集整理小工具
             this.skbtnReboot.NormlBack = null;
             this.skbtnReboot.Size = new System.Drawing.Size(260, 66);
             this.skbtnReboot.TabIndex = 6;
-            this.skbtnReboot.Text = "Step 8. 重启/关闭手机";
+            this.skbtnReboot.Text = "Step 8. 重启";
             this.skbtnReboot.UseVisualStyleBackColor = false;
             this.skbtnReboot.Click += new System.EventHandler(this.skbtnReboot_Click);
             // 
@@ -397,6 +399,23 @@ namespace 数据采集整理小工具
             this.skinTabPage2.TabItemImage = null;
             this.skinTabPage2.Text = "tbc...";
             // 
+            // skbtnShutDown
+            // 
+            this.skbtnShutDown.BackColor = System.Drawing.Color.Transparent;
+            this.skbtnShutDown.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skbtnShutDown.Dock = System.Windows.Forms.DockStyle.Top;
+            this.skbtnShutDown.DownBack = null;
+            this.skbtnShutDown.ForeColor = System.Drawing.Color.DarkRed;
+            this.skbtnShutDown.Location = new System.Drawing.Point(3, 549);
+            this.skbtnShutDown.MouseBack = null;
+            this.skbtnShutDown.Name = "skbtnShutDown";
+            this.skbtnShutDown.NormlBack = null;
+            this.skbtnShutDown.Size = new System.Drawing.Size(260, 66);
+            this.skbtnShutDown.TabIndex = 7;
+            this.skbtnShutDown.Text = "Step 9. 关闭手机";
+            this.skbtnShutDown.UseVisualStyleBackColor = false;
+            this.skbtnShutDown.Click += new System.EventHandler(this.skbtnShutDown_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -406,7 +425,7 @@ namespace 数据采集整理小工具
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "数据提取及处理小程序, by 王也, y.wang@newdegreetech.com, v0.2";
+            this.Text = "数据提取及处理小程序, by 王也, y.wang@newdegreetech.com, v0.3";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.skinTabControl1.ResumeLayout(false);
@@ -448,6 +467,7 @@ namespace 数据采集整理小工具
         private SkinChatRichTextBox skrtbLog;
         private SkinButton skbtnAnalyse;
         private SkinButton skbtnReboot;
+        private SkinButton skbtnShutDown;
     }
 }
 
