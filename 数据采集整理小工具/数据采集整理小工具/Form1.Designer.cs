@@ -42,6 +42,7 @@ namespace 数据采集整理小工具
             this.skinSplitContainer1 = new CCWin.SkinControl.SkinSplitContainer();
             this.skinGroupBox2 = new CCWin.SkinControl.SkinGroupBox();
             this.skStartCapture = new CCWin.SkinControl.SkinButton();
+            this.skbtnShutDown = new CCWin.SkinControl.SkinButton();
             this.skbtnReboot = new CCWin.SkinControl.SkinButton();
             this.skbtnAnalyse = new CCWin.SkinControl.SkinButton();
             this.skbtnClearData = new CCWin.SkinControl.SkinButton();
@@ -56,7 +57,7 @@ namespace 数据采集整理小工具
             this.skinGroupBox1 = new CCWin.SkinControl.SkinGroupBox();
             this.skpbScreenShot = new CCWin.SkinControl.SkinPictureBox();
             this.skinTabPage2 = new CCWin.SkinControl.SkinTabPage();
-            this.skbtnShutDown = new CCWin.SkinControl.SkinButton();
+            this.skbtnSaveResult = new CCWin.SkinControl.SkinButton();
             this.skinTabControl1.SuspendLayout();
             this.skinTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.skinSplitContainer1)).BeginInit();
@@ -94,7 +95,7 @@ namespace 数据采集整理小工具
             this.skinTabControl1.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.skinTabControl1.PageNorml = null;
             this.skinTabControl1.SelectedIndex = 0;
-            this.skinTabControl1.Size = new System.Drawing.Size(1016, 736);
+            this.skinTabControl1.Size = new System.Drawing.Size(1272, 928);
             this.skinTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.skinTabControl1.TabIndex = 0;
             // 
@@ -105,7 +106,7 @@ namespace 数据采集整理小工具
             this.skinTabPage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skinTabPage1.Location = new System.Drawing.Point(0, 36);
             this.skinTabPage1.Name = "skinTabPage1";
-            this.skinTabPage1.Size = new System.Drawing.Size(1016, 700);
+            this.skinTabPage1.Size = new System.Drawing.Size(1272, 892);
             this.skinTabPage1.TabIndex = 0;
             this.skinTabPage1.TabItemImage = null;
             this.skinTabPage1.Text = "main tools";
@@ -124,8 +125,8 @@ namespace 数据采集整理小工具
             // skinSplitContainer1.Panel2
             // 
             this.skinSplitContainer1.Panel2.Controls.Add(this.skinSplitContainer2);
-            this.skinSplitContainer1.Size = new System.Drawing.Size(1016, 700);
-            this.skinSplitContainer1.SplitterDistance = 266;
+            this.skinSplitContainer1.Size = new System.Drawing.Size(1272, 892);
+            this.skinSplitContainer1.SplitterDistance = 333;
             this.skinSplitContainer1.TabIndex = 0;
             // 
             // skinGroupBox2
@@ -135,12 +136,13 @@ namespace 数据采集整理小工具
             this.skinGroupBox2.Controls.Add(this.skStartCapture);
             this.skinGroupBox2.Controls.Add(this.skbtnShutDown);
             this.skinGroupBox2.Controls.Add(this.skbtnReboot);
+            this.skinGroupBox2.Controls.Add(this.skbtnSaveResult);
             this.skinGroupBox2.Controls.Add(this.skbtnAnalyse);
-            this.skinGroupBox2.Controls.Add(this.skbtnClearData);
             this.skinGroupBox2.Controls.Add(this.skbtnStopTest);
             this.skinGroupBox2.Controls.Add(this.skbtnStartTest);
             this.skinGroupBox2.Controls.Add(this.skbtnOpenApk);
             this.skinGroupBox2.Controls.Add(this.skbtnInstallApk);
+            this.skinGroupBox2.Controls.Add(this.skbtnClearData);
             this.skinGroupBox2.Controls.Add(this.skbtnAuthorize);
             this.skinGroupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skinGroupBox2.ForeColor = System.Drawing.Color.Blue;
@@ -148,7 +150,7 @@ namespace 数据采集整理小工具
             this.skinGroupBox2.Name = "skinGroupBox2";
             this.skinGroupBox2.RectBackColor = System.Drawing.Color.White;
             this.skinGroupBox2.RoundStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinGroupBox2.Size = new System.Drawing.Size(266, 700);
+            this.skinGroupBox2.Size = new System.Drawing.Size(333, 892);
             this.skinGroupBox2.TabIndex = 0;
             this.skinGroupBox2.TabStop = false;
             this.skinGroupBox2.Text = "ToolBox";
@@ -163,15 +165,32 @@ namespace 数据采集整理小工具
             this.skStartCapture.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skStartCapture.DownBack = null;
             this.skStartCapture.ForeColor = System.Drawing.Color.DarkRed;
-            this.skStartCapture.Location = new System.Drawing.Point(3, 615);
+            this.skStartCapture.Location = new System.Drawing.Point(3, 681);
             this.skStartCapture.MouseBack = null;
             this.skStartCapture.Name = "skStartCapture";
             this.skStartCapture.NormlBack = null;
-            this.skStartCapture.Size = new System.Drawing.Size(260, 82);
+            this.skStartCapture.Size = new System.Drawing.Size(327, 208);
             this.skStartCapture.TabIndex = 4;
             this.skStartCapture.Text = "启动/停止系统截图";
             this.skStartCapture.UseVisualStyleBackColor = false;
             this.skStartCapture.Click += new System.EventHandler(this.skStartCapture_Click);
+            // 
+            // skbtnShutDown
+            // 
+            this.skbtnShutDown.BackColor = System.Drawing.Color.Transparent;
+            this.skbtnShutDown.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skbtnShutDown.Dock = System.Windows.Forms.DockStyle.Top;
+            this.skbtnShutDown.DownBack = null;
+            this.skbtnShutDown.ForeColor = System.Drawing.Color.DarkRed;
+            this.skbtnShutDown.Location = new System.Drawing.Point(3, 615);
+            this.skbtnShutDown.MouseBack = null;
+            this.skbtnShutDown.Name = "skbtnShutDown";
+            this.skbtnShutDown.NormlBack = null;
+            this.skbtnShutDown.Size = new System.Drawing.Size(327, 66);
+            this.skbtnShutDown.TabIndex = 7;
+            this.skbtnShutDown.Text = "Step 10. 关闭手机";
+            this.skbtnShutDown.UseVisualStyleBackColor = false;
+            this.skbtnShutDown.Click += new System.EventHandler(this.skbtnShutDown_Click);
             // 
             // skbtnReboot
             // 
@@ -180,13 +199,13 @@ namespace 数据采集整理小工具
             this.skbtnReboot.Dock = System.Windows.Forms.DockStyle.Top;
             this.skbtnReboot.DownBack = null;
             this.skbtnReboot.ForeColor = System.Drawing.Color.DarkRed;
-            this.skbtnReboot.Location = new System.Drawing.Point(3, 483);
+            this.skbtnReboot.Location = new System.Drawing.Point(3, 549);
             this.skbtnReboot.MouseBack = null;
             this.skbtnReboot.Name = "skbtnReboot";
             this.skbtnReboot.NormlBack = null;
-            this.skbtnReboot.Size = new System.Drawing.Size(260, 66);
+            this.skbtnReboot.Size = new System.Drawing.Size(327, 66);
             this.skbtnReboot.TabIndex = 6;
-            this.skbtnReboot.Text = "Step 8. 重启";
+            this.skbtnReboot.Text = "Step 9. 重启";
             this.skbtnReboot.UseVisualStyleBackColor = false;
             this.skbtnReboot.Click += new System.EventHandler(this.skbtnReboot_Click);
             // 
@@ -201,7 +220,7 @@ namespace 数据采集整理小工具
             this.skbtnAnalyse.MouseBack = null;
             this.skbtnAnalyse.Name = "skbtnAnalyse";
             this.skbtnAnalyse.NormlBack = null;
-            this.skbtnAnalyse.Size = new System.Drawing.Size(260, 66);
+            this.skbtnAnalyse.Size = new System.Drawing.Size(327, 66);
             this.skbtnAnalyse.TabIndex = 5;
             this.skbtnAnalyse.Text = "Step 7. 分析数据";
             this.skbtnAnalyse.UseVisualStyleBackColor = false;
@@ -214,13 +233,13 @@ namespace 数据采集整理小工具
             this.skbtnClearData.Dock = System.Windows.Forms.DockStyle.Top;
             this.skbtnClearData.DownBack = null;
             this.skbtnClearData.ForeColor = System.Drawing.Color.DarkRed;
-            this.skbtnClearData.Location = new System.Drawing.Point(3, 351);
+            this.skbtnClearData.Location = new System.Drawing.Point(3, 87);
             this.skbtnClearData.MouseBack = null;
             this.skbtnClearData.Name = "skbtnClearData";
             this.skbtnClearData.NormlBack = null;
-            this.skbtnClearData.Size = new System.Drawing.Size(260, 66);
+            this.skbtnClearData.Size = new System.Drawing.Size(327, 66);
             this.skbtnClearData.TabIndex = 3;
-            this.skbtnClearData.Text = "Step 6. 清除手机中的数据";
+            this.skbtnClearData.Text = "Step 2. 清除手机中的数据";
             this.skbtnClearData.UseVisualStyleBackColor = false;
             this.skbtnClearData.Click += new System.EventHandler(this.skbtnClearData_Click);
             // 
@@ -231,11 +250,11 @@ namespace 数据采集整理小工具
             this.skbtnStopTest.Dock = System.Windows.Forms.DockStyle.Top;
             this.skbtnStopTest.DownBack = null;
             this.skbtnStopTest.ForeColor = System.Drawing.Color.DarkRed;
-            this.skbtnStopTest.Location = new System.Drawing.Point(3, 285);
+            this.skbtnStopTest.Location = new System.Drawing.Point(3, 351);
             this.skbtnStopTest.MouseBack = null;
             this.skbtnStopTest.Name = "skbtnStopTest";
             this.skbtnStopTest.NormlBack = null;
-            this.skbtnStopTest.Size = new System.Drawing.Size(260, 66);
+            this.skbtnStopTest.Size = new System.Drawing.Size(327, 66);
             this.skbtnStopTest.TabIndex = 3;
             this.skbtnStopTest.Text = "Step 5. 结束测试";
             this.skbtnStopTest.UseVisualStyleBackColor = false;
@@ -248,13 +267,13 @@ namespace 数据采集整理小工具
             this.skbtnStartTest.Dock = System.Windows.Forms.DockStyle.Top;
             this.skbtnStartTest.DownBack = null;
             this.skbtnStartTest.ForeColor = System.Drawing.Color.DarkRed;
-            this.skbtnStartTest.Location = new System.Drawing.Point(3, 219);
+            this.skbtnStartTest.Location = new System.Drawing.Point(3, 285);
             this.skbtnStartTest.MouseBack = null;
             this.skbtnStartTest.Name = "skbtnStartTest";
             this.skbtnStartTest.NormlBack = null;
-            this.skbtnStartTest.Size = new System.Drawing.Size(260, 66);
+            this.skbtnStartTest.Size = new System.Drawing.Size(327, 66);
             this.skbtnStartTest.TabIndex = 3;
-            this.skbtnStartTest.Text = "Step 4. 开始测试";
+            this.skbtnStartTest.Text = "Step 5. 开始测试";
             this.skbtnStartTest.UseVisualStyleBackColor = false;
             this.skbtnStartTest.Click += new System.EventHandler(this.skbtnStartTest_Click);
             // 
@@ -265,13 +284,13 @@ namespace 数据采集整理小工具
             this.skbtnOpenApk.Dock = System.Windows.Forms.DockStyle.Top;
             this.skbtnOpenApk.DownBack = null;
             this.skbtnOpenApk.ForeColor = System.Drawing.Color.DarkRed;
-            this.skbtnOpenApk.Location = new System.Drawing.Point(3, 153);
+            this.skbtnOpenApk.Location = new System.Drawing.Point(3, 219);
             this.skbtnOpenApk.MouseBack = null;
             this.skbtnOpenApk.Name = "skbtnOpenApk";
             this.skbtnOpenApk.NormlBack = null;
-            this.skbtnOpenApk.Size = new System.Drawing.Size(260, 66);
+            this.skbtnOpenApk.Size = new System.Drawing.Size(327, 66);
             this.skbtnOpenApk.TabIndex = 2;
-            this.skbtnOpenApk.Text = "Step 3. 打开apk";
+            this.skbtnOpenApk.Text = "Step 4. 打开apk";
             this.skbtnOpenApk.UseVisualStyleBackColor = false;
             this.skbtnOpenApk.Click += new System.EventHandler(this.skbtnOpenApk_Click);
             // 
@@ -282,13 +301,13 @@ namespace 数据采集整理小工具
             this.skbtnInstallApk.Dock = System.Windows.Forms.DockStyle.Top;
             this.skbtnInstallApk.DownBack = null;
             this.skbtnInstallApk.ForeColor = System.Drawing.Color.DarkRed;
-            this.skbtnInstallApk.Location = new System.Drawing.Point(3, 87);
+            this.skbtnInstallApk.Location = new System.Drawing.Point(3, 153);
             this.skbtnInstallApk.MouseBack = null;
             this.skbtnInstallApk.Name = "skbtnInstallApk";
             this.skbtnInstallApk.NormlBack = null;
-            this.skbtnInstallApk.Size = new System.Drawing.Size(260, 66);
+            this.skbtnInstallApk.Size = new System.Drawing.Size(327, 66);
             this.skbtnInstallApk.TabIndex = 1;
-            this.skbtnInstallApk.Text = "Step 2. 安装apk";
+            this.skbtnInstallApk.Text = "Step 3. 安装apk";
             this.skbtnInstallApk.UseVisualStyleBackColor = false;
             this.skbtnInstallApk.Click += new System.EventHandler(this.skbtnInstallApk_Click);
             // 
@@ -303,7 +322,7 @@ namespace 数据采集整理小工具
             this.skbtnAuthorize.MouseBack = null;
             this.skbtnAuthorize.Name = "skbtnAuthorize";
             this.skbtnAuthorize.NormlBack = null;
-            this.skbtnAuthorize.Size = new System.Drawing.Size(260, 66);
+            this.skbtnAuthorize.Size = new System.Drawing.Size(327, 66);
             this.skbtnAuthorize.TabIndex = 0;
             this.skbtnAuthorize.Text = "Step 1. 重启后授权";
             this.skbtnAuthorize.UseVisualStyleBackColor = false;
@@ -323,8 +342,8 @@ namespace 数据采集整理小工具
             // skinSplitContainer2.Panel2
             // 
             this.skinSplitContainer2.Panel2.Controls.Add(this.skinGroupBox1);
-            this.skinSplitContainer2.Size = new System.Drawing.Size(746, 700);
-            this.skinSplitContainer2.SplitterDistance = 377;
+            this.skinSplitContainer2.Size = new System.Drawing.Size(935, 892);
+            this.skinSplitContainer2.SplitterDistance = 472;
             this.skinSplitContainer2.TabIndex = 0;
             // 
             // skinGroupBox3
@@ -338,7 +357,7 @@ namespace 数据采集整理小工具
             this.skinGroupBox3.Name = "skinGroupBox3";
             this.skinGroupBox3.RectBackColor = System.Drawing.Color.White;
             this.skinGroupBox3.RoundStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinGroupBox3.Size = new System.Drawing.Size(377, 700);
+            this.skinGroupBox3.Size = new System.Drawing.Size(472, 892);
             this.skinGroupBox3.TabIndex = 0;
             this.skinGroupBox3.TabStop = false;
             this.skinGroupBox3.Text = "Log";
@@ -355,7 +374,7 @@ namespace 数据采集整理小工具
             this.skrtbLog.SelectControl = null;
             this.skrtbLog.SelectControlIndex = 0;
             this.skrtbLog.SelectControlPoint = new System.Drawing.Point(0, 0);
-            this.skrtbLog.Size = new System.Drawing.Size(371, 676);
+            this.skrtbLog.Size = new System.Drawing.Size(466, 868);
             this.skrtbLog.TabIndex = 1;
             this.skrtbLog.Text = "";
             // 
@@ -370,7 +389,7 @@ namespace 数据采集整理小工具
             this.skinGroupBox1.Name = "skinGroupBox1";
             this.skinGroupBox1.RectBackColor = System.Drawing.Color.White;
             this.skinGroupBox1.RoundStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinGroupBox1.Size = new System.Drawing.Size(365, 700);
+            this.skinGroupBox1.Size = new System.Drawing.Size(459, 892);
             this.skinGroupBox1.TabIndex = 0;
             this.skinGroupBox1.TabStop = false;
             this.skinGroupBox1.Text = "ScreenShot";
@@ -384,7 +403,7 @@ namespace 数据采集整理小工具
             this.skpbScreenShot.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skpbScreenShot.Location = new System.Drawing.Point(3, 21);
             this.skpbScreenShot.Name = "skpbScreenShot";
-            this.skpbScreenShot.Size = new System.Drawing.Size(359, 676);
+            this.skpbScreenShot.Size = new System.Drawing.Size(453, 868);
             this.skpbScreenShot.TabIndex = 0;
             this.skpbScreenShot.TabStop = false;
             // 
@@ -399,33 +418,33 @@ namespace 数据采集整理小工具
             this.skinTabPage2.TabItemImage = null;
             this.skinTabPage2.Text = "tbc...";
             // 
-            // skbtnShutDown
+            // skbtnSaveResult
             // 
-            this.skbtnShutDown.BackColor = System.Drawing.Color.Transparent;
-            this.skbtnShutDown.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skbtnShutDown.Dock = System.Windows.Forms.DockStyle.Top;
-            this.skbtnShutDown.DownBack = null;
-            this.skbtnShutDown.ForeColor = System.Drawing.Color.DarkRed;
-            this.skbtnShutDown.Location = new System.Drawing.Point(3, 549);
-            this.skbtnShutDown.MouseBack = null;
-            this.skbtnShutDown.Name = "skbtnShutDown";
-            this.skbtnShutDown.NormlBack = null;
-            this.skbtnShutDown.Size = new System.Drawing.Size(260, 66);
-            this.skbtnShutDown.TabIndex = 7;
-            this.skbtnShutDown.Text = "Step 9. 关闭手机";
-            this.skbtnShutDown.UseVisualStyleBackColor = false;
-            this.skbtnShutDown.Click += new System.EventHandler(this.skbtnShutDown_Click);
+            this.skbtnSaveResult.BackColor = System.Drawing.Color.Transparent;
+            this.skbtnSaveResult.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skbtnSaveResult.Dock = System.Windows.Forms.DockStyle.Top;
+            this.skbtnSaveResult.DownBack = null;
+            this.skbtnSaveResult.ForeColor = System.Drawing.Color.DarkRed;
+            this.skbtnSaveResult.Location = new System.Drawing.Point(3, 483);
+            this.skbtnSaveResult.MouseBack = null;
+            this.skbtnSaveResult.Name = "skbtnSaveResult";
+            this.skbtnSaveResult.NormlBack = null;
+            this.skbtnSaveResult.Size = new System.Drawing.Size(327, 66);
+            this.skbtnSaveResult.TabIndex = 8;
+            this.skbtnSaveResult.Text = "Step 8. 保存结果";
+            this.skbtnSaveResult.UseVisualStyleBackColor = false;
+            this.skbtnSaveResult.Click += new System.EventHandler(this.skbtnSaveResult_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 768);
+            this.ClientSize = new System.Drawing.Size(1280, 960);
             this.Controls.Add(this.skinTabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "数据提取及处理小程序, by 王也, y.wang@newdegreetech.com, v0.3";
+            this.Text = "数据提取及处理小程序, by 王也, y.wang@newdegreetech.com, v0.4";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.skinTabControl1.ResumeLayout(false);
@@ -468,6 +487,7 @@ namespace 数据采集整理小工具
         private SkinButton skbtnAnalyse;
         private SkinButton skbtnReboot;
         private SkinButton skbtnShutDown;
+        private SkinButton skbtnSaveResult;
     }
 }
 

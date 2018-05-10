@@ -127,5 +127,11 @@ namespace 数据采集整理小工具
             AdbUtils.shutdown();
             skrtbLog.ShowLog("手机已关机");
         }
+
+        private void skbtnSaveResult_Click(object sender, EventArgs e)
+        {
+            CmdUtils.SaveResult(StrNo);
+            skrtbLog.ShowLog("结果已保存");
+        }
     }
 }
